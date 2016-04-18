@@ -1,0 +1,44 @@
+---
+layout: page
+title: 소프트웨어 카펜트리 지리공간정보 교재
+subtitle: R 지리공간정보 
+output:
+  html_document: 
+    keep_md: yes
+  pdf_document:
+    latex_engine: xelatex
+mainfont: NanumGothic
+---
+
+```{r  include = FALSE}
+source("tools/chunk-options.R")
+knitr::opts_chunk$set(error = TRUE)
+```
+
+> ### 지리공간 데이터 {.prereq}
+> 
+> [NEON Spatio-Temporal Teaching Dataset](https://figshare.com/articles/NEON_Spatio_Temporal_Teaching_Dataset/1580068)
+> 
+> - 온도, 강우량 등 마이크로 기상 데이터
+> - 원격탐사 인공위성에서 관측한 래스터 형식 시계열 데이터
+> - 벡터 데이터로 조사영역 지도 생성과 원격 센서 데이터에서 나온 기술 통계량
+> - 조사 영역 초목 식생을 특정짓는데 사용되는 광선 레이더(Lidar) 래스터 데이터
+
+
+### 목차 [^dc-neon-workshop]
+
+|   한국어(Korean)      |    영어(English)            |
+|------------------------|---------------------------|
+|1. [지리정보 데이터 관리와 조작](01-data-mgmt.html) | 1. [Data Management](http://neon-workwithdata.github.io/NEON-R-Spatio-Temporal-Data-and-Management-Intro/)|
+|2. [기준 좌표계와 지리공간 투사](02-coordinate-projection.html) | 2. [Intro to Coordinate Reference Systems & Spatial Projections](http://neon-workwithdata.github.io/NEON-R-Spatio-Temporal-Data-and-Management-Intro/R/intro-to-coordinate-reference-systems)|
+|3. [R에서 벡터 데이터](03-vector-data-in-r.html) | 3. [Introduction to Working With Vector Data in R](http://neondataskills.org/tutorial-series/vector-data-series/)|
+|4. [R에서 래스터 데이터](04-raster-data-in-r.html) | 4. [Introduction to Working With Raster Data in R](http://neondataskills.org/tutorial-series/raster-data-series/)|
+|5. [R에서 시계열 데이터](05-timeseries-data-in-r.html) | 5. [Introduction to Working With Time Series Data in Text Formats in R](http://neondataskills.org/tutorial-series/tabular-time-series/)|
+
+
+[^dc-neon-workshop]: [Hello, Spatio-temporal Data Carpentry](http://www.datacarpentry.org/blog/pilot-spatial-data/)
+
+### 참고문헌
+
+- [National Ecological Observatory Network (NEON) - Data Carpentry Workshop](http://neon-workwithdata.github.io/NEON-R-Spatio-Temporal-Data-and-Management-Intro/)
+- [GitHub NEON-R-Spatio-Temporal-Data-and-Management-Intro](https://github.com/NEON-WorkWithData/NEON-R-Spatio-Temporal-Data-and-Management-Intro)
